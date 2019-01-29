@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shipping Main Menu</title>
+    <style>
+        #customtable {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+
+        #customtable td,
+        #customtable th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        #customtable tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #customtable tr:hover {
+            background-color: #ddd;
+        }
+
+        #customtable th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <h1>Shipping System Database</h1>
+        <table id="customtable">
+            <tr>
+                <th>Ships</th>
+                <th>Shipping Companies</th>
+                <th>Orders</th>
+            </tr>
+            <tr>
+                <td><a href="/showShips">List Ships</a></td>
+                <td><a href="/showShippingCompanies">List Shipping Companies</a></td>
+                <td><a href="/showOrders">List Orders</a></td>
+            </tr>
+            <tr>
+                <td><a href="/addShip">Add Ship</a></td>
+                <td><a href="/addShippingCompany">Add Shipping Company</a></td>
+                <td><a href="/createOrder">Create Order</a></td>
+            </tr>
+        </table>
+        <br>
+        <a style="text-align:center" href="/logout">Logout</a>
+    </div>
+</body>
+
+</html>
